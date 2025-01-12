@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b35aaedca3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-stack Developer</p>
+                <h1>Hi, I'm <span>Aditya Tiwari</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Resumehome.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1> 
+                    <p>I am a B.Tech undergraduate with a strong passion for technology and problem-solving. As a skilled full-stack developer, I possess hands-on experience in building robust and user-centric web applications. Alongside my development expertise, I am proficient in Data Structures and Algorithms, enabling me to tackle complex coding challenges with efficiency and precision. I am driven by a constant desire to learn and grow, seeking opportunities to contribute meaningfully while expanding my knowledge of industry-level practices.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-stack Developement</span><br>
+                                <b>Front‑end Development</b> : HTML, CSS, JavaScript, ReactJS, TailwindCSS, Bootstrap, Shadcn UI <br>
+                                <b>Back‑end Development</b> : Node.js, Express.js,Rest API <br> <b>Database</b> : MongoDB
+                                </li>
+                            <li><span>Data Structures and Algorithms</span><br>Proficient in Data Structures and Algorithms (DSA) with strong problem-solving skills. Solved over 400 coding problems on LeetCode and GFG, showcasing expertise in arrays, linked lists, trees, graphs, dynamic programming, and more. Skilled in optimizing algorithms and developing efficient solutions to complex computational challenges.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2024-June 2024</span><br>Front-end Developer at Codsoft</li>
+                            <li><span>June 2024-July 2024</span><br>Front-end Developer at Oasis infobyte</li>
+                            <li><span>July 2024-August 2024</span><br>Front-end Developer at Prodigy Infotech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024-2026</span><br>Btech from Maharaja Surajmal Institute of Technology, Delhi</li>
+                            <li><span>2021-2022</span><br>Senior-Secondary from Jinvani Bharti Public School, Delhi</li>
+                            <li><span>2019-2020</span><br>Secondary from Jinvani Bharti Public School, Delhi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Developer</h2>
+                    <p>Proficient in front-end development with expertise in HTML, CSS, JavaScript, and modern libraries like React. Skilled in building responsive and visually appealing interfaces using Tailwind CSS and ShadCN UI, ensuring seamless user experiences and clean, maintainable code.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Back-end Developer and Database</h2>
+                    <p>Proficient in backend development using Node.js and Express, with a strong grasp of building RESTful APIs. Proficient in managing databases with MongoDB, ensuring efficient data storage and retrieval for scalable and robust web applications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/job.webp" alt="">
+                    <div class="layer">
+                        <h3>Job Portal</h3>
+                        <p>Developed a Full Stack Job Portal using the MERN stack (MongoDB, Express.js, React.js, Node.js). The platform features secure user authentication with JWT, enables job listings for employers, and allows job seekers to upload resumes and create profiles. Includes advanced search and filtering options, application tracking for users, and a centralized admin dashboard for managing platform activity and analytics.</p>
+                        <a href="https://job-portal-project-9k47.onrender.com/Login" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather.webp" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Created a Weather Report App using HTML, CSS, JavaScript, and the OpenWeather API. The application provides real-time weather updates for any location, featuring a clean and responsive user interface. Includes features like current temperature, weather conditions, and forecasts, ensuring an intuitive and seamless user experience.</p>
+                        <a href="https://aditiwari07.github.io/Weather-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/spotify.webp" alt="">
+                    <div class="layer">
+                        <h3>Spotify UI</h3>
+                        <p>Developed a Spotify UI Clone showcasing a sleek and modern interface using React, CSS, and Tailwind CSS. The application replicates Spotify's design with features like a responsive layout, music playlist display, and seamless navigation, offering an engaging user interface experience.</p>
+                        <a href="https://aditiwari07.github.io/Spotify_project/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/aditiwari07?tab=repositories" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>adityatiwar07@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7701852556</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/images/Generic_Resume_Template.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name..." required>
+                        <input type="email" name="email" placeholder="Your Email..." required>
+                        <textarea name="Message" rows="6" placeholder="Your Message..."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Aditya. Made with love <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        var sidemenu = document.getElementById("sidemenu");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
