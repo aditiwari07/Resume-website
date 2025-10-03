@@ -18,7 +18,6 @@ body{
     background-size: cover;
     background-position: center;
 }
-
 .container{ 
     padding:10px 10%;
 }
@@ -368,10 +367,3 @@ nav .fa-solid{
         font-size: 14px;
     }
 }
-
-
-
-
-
-
-
