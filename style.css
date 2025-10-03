@@ -17,6 +17,7 @@ body{
     background-image: url("https://github.com/aditiwari07/Resume-website/raw/main/images/backgroundImage.jpeg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .container{ 
     padding:10px 10%;
@@ -367,6 +368,7 @@ nav .fa-solid{
         font-size: 14px;
     }
 }
+
 
 
 
